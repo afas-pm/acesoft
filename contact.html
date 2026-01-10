@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+  <!--=============== REMIXICONS ===============-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <title>Acesoft | Mobile App Development Company</title>
+</head>
+
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/img/logo-2.png" alt="Acesoft Logo" class="nav__logo-img">
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="ios.html" class="nav__link">iOS Development</a></li>
+          <li><a href="android.html" class="nav__link">Android Development</a></li>
+          <li><a href="contact.html" class="nav__link button">Contact Us</a></li>
+        </ul>
+
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-large-line"></i>
+        </div>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-apps-2-line"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!--==================== MAIN ====================-->
+  <main class="main">
+  <!--==================== CONTACT HERO ====================-->
+  <section class="contact__hero section">
+    <div class="container">
+      <h1 class="section__title">Get In Touch</h1>
+      <p class="section__subtitle">
+        Have a project in mind? Let's discuss how Acesoft can help bring your mobile app vision to life.
+      </p>
+    </div>
+  </section>
+
+  <!--==================== CONTACT CONTENT ====================-->
+  <section class="contact section">
+    <div class="container">
+      <div class="contact__container grid">
+
+        <!-- Contact Information -->
+        <div class="contact__info">
+          <h2 class="contact__title">Contact Information</h2>
+          <p class="contact__description">
+            Reach out to us through any of the following channels. 
+            We're here to help with your mobile app development needs.
+          </p>
+
+          <div class="contact__details">
+            <div class="contact__card">
+              <i class="ri-map-pin-line contact__icon"></i>
+              <div>
+                <h3 class="contact__card-title">Address</h3>
+                <p class="contact__card-info">
+                  200 Villagewalk Blvd Suite 304<br>
+                  London, ON N6G 0W8<br>
+                  Canada
+                </p>
+              </div>
+            </div>
+
+            <div class="contact__card">
+              <i class="ri-mail-line contact__icon"></i>
+              <div>
+                <h3 class="contact__card-title">Email</h3>
+                <p class="contact__card-info">
+                  <a href="mailto:info@acesoft.ca">info@acesoft.ca</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact__card">
+              <i class="ri-phone-line contact__icon"></i>
+              <div>
+                <h3 class="contact__card-title">Phone</h3>
+                <p class="contact__card-info">
+                  <a href="tel:+15198081000">+1 519 808 1000</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact__card">
+              <i class="ri-time-line contact__icon"></i>
+              <div>
+                <h3 class="contact__card-title">Business Hours</h3>
+                <p class="contact__card-info">
+                  Monday - Friday: 9:00 AM - 6:00 PM EST<br>
+                  Saturday - Sunday: Closed
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact__form-container">
+          <h2 class="contact__title">Send Us a Message</h2>
+          
+          <form class="contact__form" id="contact-form">
+            <div class="contact__form-group">
+              <label for="name" class="contact__label">Full Name *</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                class="contact__input" 
+                placeholder="John Doe"
+                required
+              >
+            </div>
+
+            <div class="contact__form-group">
+              <label for="email" class="contact__label">Email Address *</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                class="contact__input" 
+                placeholder="john@example.com"
+                required
+              >
+            </div>
+
+            <div class="contact__form-group">
+              <label for="phone" class="contact__label">Phone Number</label>
+              <input 
+                type="tel" 
+                id="phone" 
+                name="phone" 
+                class="contact__input" 
+                placeholder="+1 234 567 8900"
+              >
+            </div>
+
+            <div class="contact__form-group">
+              <label for="service" class="contact__label">Service Interested In *</label>
+              <select id="service" name="service" class="contact__input" required>
+                <option value="">Select a service</option>
+                <option value="ios">iOS App Development</option>
+                <option value="android">Android App Development</option>
+                <option value="both">iOS & Android Development</option>
+                <option value="consultation">Consultation</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="contact__form-group">
+              <label for="message" class="contact__label">Message *</label>
+              <textarea 
+                id="message" 
+                name="message" 
+                class="contact__input contact__textarea" 
+                placeholder="Tell us about your project..."
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="button contact__button">
+              Send Message
+              <i class="ri-send-plane-line"></i>
+            </button>
+
+            <p class="contact__form-message" id="form-message"></p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--==================== MAP ====================-->
+  <section class="map section">
+    <div class="container">
+      <h2 class="section__title">Find Us</h2>
+      <div class="map__container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2918.842634847456!2d-81.28344!3d42.98866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882eee7b47e21d89%3A0x7f4e3b0b4c1e5a7f!2s200%20Villagewalk%20Blvd%2C%20London%2C%20ON%20N6G%200W8%2C%20Canada!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
+          width="100%" 
+          height="400" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map__iframe">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!--==================== FOOTER ====================-->
+<footer class="footer">
+  <div class="container footer__content">
+    <p>© 2026 Acesoft Technologies. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!--========== SCROLL UP ==========-->
+<a href="#" class="scrollup" id="scroll-up">
+  <i class="ri-arrow-up-line"></i>
+</a>
+
+<!--=============== SCROLL REVEAL ===============-->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!--=============== MAIN JS ===============-->
+<script src="assets/js/main.js"></script>
+
+<!--=============== CONTACT FORM JS ===============-->
+<script>
+// Contact form handling
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const formMessage = document.getElementById('form-message');
+  const button = document.querySelector('.contact__button');
+  
+  // Simulate form submission
+  button.disabled = true;
+  button.innerHTML = 'Sending...';
+  
+  setTimeout(() => {
+    formMessage.textContent = 'Thank you! Your message has been sent successfully. We will get back to you soon.';
+    formMessage.style.color = '#4caf50';
+    formMessage.style.display = 'block';
+    
+    button.disabled = false;
+    button.innerHTML = 'Send Message <i class="ri-send-plane-line"></i>';
+    
+    // Reset form
+    document.getElementById('contact-form').reset();
+    
+    // Hide message after 5 seconds
+    setTimeout(() => {
+      formMessage.style.display = 'none';
+    }, 5000);
+  }, 1500);
+});
+</script>
+
+</body>
+</html>
