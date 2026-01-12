@@ -3,42 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!--=============== FAVICON ===============-->
   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-
-  <!--=============== REMIXICONS ===============-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
-
-  <!--=============== CSS ===============-->
   <link rel="stylesheet" href="assets/css/styles.css">
-
-  <title>Acesoft | Mobile App Development Company</title>
+  <title>Acesoft | Mobile App Development</title>
 </head>
 
 <body>
+  <!--==================== TOP BAR ====================-->
+  <div class="topbar">
+    <div class="topbar__content container">
+      <div class="topbar__info">
+        <span><i class="ri-mail-line"></i>support@acesoft.ca</span>
+        <span><i class="ri-time-line"></i>8:00am - 5:00pm</span>
+      </div>
+      <div class="topbar__links">
+        <a href="#">News</a>
+        <a href="#">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <div class="topbar__social">
+          <a href="#"><i class="ri-facebook-fill"></i></a>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+          <a href="#"><i class="ri-instagram-line"></i></a>
+          <a href="#"><i class="ri-linkedin-fill"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!--==================== HEADER ====================-->
   <header class="header" id="header">
     <nav class="nav container">
       <a href="index.html" class="nav__logo">
-        <img src="assets/img/logo-2.png" alt="Acesoft Logo" class="nav__logo-img">
+        <img src="assets/img/logo-2.png" alt="Acesoft">
       </a>
-
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
           <li><a href="index.html" class="nav__link">Home</a></li>
-          <li><a href="ios.html" class="nav__link">iOS Development</a></li>
-          <li><a href="android.html" class="nav__link">Android Development</a></li>
-          <li><a href="contact.html" class="nav__link button">Contact Us</a></li>
+          <li><a href="#services" class="nav__link">Services</a></li>
+          <li><a href="ios.html" class="nav__link">iOS</a></li>
+          <li><a href="android.html" class="nav__link">Android</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
         </ul>
-
-        <div class="nav__close" id="nav-close">
-          <i class="ri-close-large-line"></i>
-        </div>
+        <div class="nav__close" id="nav-close"><i class="ri-close-line"></i></div>
       </div>
-
-      <div class="nav__toggle" id="nav-toggle">
-        <i class="ri-apps-2-line"></i>
+      <div class="nav__actions">
+        <a href="contact.html" class="nav__button">Get Quote</a>
+        <div class="nav__toggle" id="nav-toggle"><i class="ri-menu-line"></i></div>
       </div>
     </nav>
   </header>
@@ -47,63 +58,82 @@
   <main class="main">
 
     <!--==================== HERO ====================-->
-    <section class="home section">
-      <div class="home__container container grid">
-
-        <div class="home__content">
-          <h1 class="home__title">
-            Mobile App Development<br>
-            <span>for iOS & Android</span>
+    <section class="hero" id="home">
+      <div class="hero__container container">
+        <div class="hero__content">
+          <span class="hero__subtitle">WELCOME! START GROWING YOUR BUSINESS TODAY</span>
+          <h1 class="hero__title">
+            Innovative <span class="hero__title-italic">Solutions,</span><br>
+            Tailored for Your Success
           </h1>
-
-          <p class="home__description">
-            Acesoft is a trusted mobile app development company delivering secure, scalable, and high-performance 
-            iOS and Android solutions for startups and enterprises worldwide.
+          <p class="hero__description">
+            Acesoft is a trusted mobile app development company delivering secure, scalable, and 
+            high-performance iOS and Android solutions for startups and enterprises worldwide.
           </p>
-
-          <div class="home__buttons">
-            <a href="contact.html" class="button">Start Your Project</a>
-            <a href="#services" class="button__link">
-              <span>View Our Services</span>
-              <i class="ri-arrow-right-line"></i>
-            </a>
-          </div>
+          <a href="contact.html" class="hero__button">Get Consultant</a>
         </div>
 
-        <div class="home__images">
-          <img src="assets/img/home-img-1.jpeg" alt="Mobile App Development">
+        <div class="hero__image">
+          <img src="assets/img/home-img-1.jpeg" alt="Business Professional">
         </div>
-
       </div>
+
+      <!-- Scroll Button (Right Side) -->
+      <a href="#services" class="hero__scroll">
+        <span class="hero__scroll-text">View RTL</span>
+      </a>
     </section>
 
     <!--==================== SERVICES ====================-->
     <section class="services section" id="services">
       <div class="container">
-        <h2 class="section__title">Mobile App Development Services</h2>
+        <div class="section__header">
+          <span class="section__subtitle">WHAT WE DO</span>
+          <h2 class="section__title">Mobile App Development Services</h2>
+        </div>
 
         <div class="services__grid">
-
           <div class="services__card">
-            <i class="ri-apple-line services__icon"></i>
+            <div class="services__icon-wrapper">
+              <i class="ri-apple-line services__icon"></i>
+            </div>
             <h3 class="services__title">iOS App Development</h3>
             <p class="services__description">
               We design and develop premium iOS applications using Swift and Apple's latest technologies,
               ensuring seamless performance across all Apple devices.
             </p>
-            <a href="ios.html" class="services__link">Explore iOS Services</a>
+            <a href="ios.html" class="services__link">
+              Learn More <i class="ri-arrow-right-line"></i>
+            </a>
           </div>
 
           <div class="services__card">
-            <i class="ri-android-line services__icon"></i>
+            <div class="services__icon-wrapper">
+              <i class="ri-android-line services__icon"></i>
+            </div>
             <h3 class="services__title">Android App Development</h3>
             <p class="services__description">
               Our Android solutions are built for scalability and performance,
               optimized for a wide range of devices and Android versions.
             </p>
-            <a href="android.html" class="services__link">Explore Android Services</a>
+            <a href="android.html" class="services__link">
+              Learn More <i class="ri-arrow-right-line"></i>
+            </a>
           </div>
 
+          <div class="services__card">
+            <div class="services__icon-wrapper">
+              <i class="ri-smartphone-line services__icon"></i>
+            </div>
+            <h3 class="services__title">Cross-Platform Development</h3>
+            <p class="services__description">
+              Build once, deploy everywhere. Our cross-platform solutions ensure consistent 
+              user experience across iOS and Android platforms.
+            </p>
+            <a href="#" class="services__link">
+              Learn More <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -111,37 +141,47 @@
     <!--==================== WORK PROCESS ====================-->
     <section class="process section">
       <div class="container">
-        <h2 class="section__title">Our Work Process</h2>
+        <div class="section__header">
+          <span class="section__subtitle">HOW WE WORK</span>
+          <h2 class="section__title">Our Work Process</h2>
+        </div>
 
-        <div class="services__grid">
-
-          <div class="services__card">
-            <i class="ri-file-list-3-line services__icon"></i>
-            <h3 class="services__title">Requirement Gathering</h3>
-            <p class="services__description">
+        <div class="process__grid">
+          <div class="process__card">
+            <div class="process__number">01</div>
+            <div class="process__icon-wrapper">
+              <i class="ri-file-list-3-line process__icon"></i>
+            </div>
+            <h3 class="process__title">Requirement Gathering</h3>
+            <p class="process__description">
               We work closely with clients to understand business goals, target users,
               and technical requirements for mobile applications.
             </p>
           </div>
 
-          <div class="services__card">
-            <i class="ri-layout-4-line services__icon"></i>
-            <h3 class="services__title">Design & Development</h3>
-            <p class="services__description">
+          <div class="process__card">
+            <div class="process__number">02</div>
+            <div class="process__icon-wrapper">
+              <i class="ri-layout-4-line process__icon"></i>
+            </div>
+            <h3 class="process__title">Design & Development</h3>
+            <p class="process__description">
               Our designers and developers create intuitive UI/UX and build robust
               iOS and Android apps using industry best practices.
             </p>
           </div>
 
-          <div class="services__card">
-            <i class="ri-settings-3-line services__icon"></i>
-            <h3 class="services__title">Maintenance & Support</h3>
-            <p class="services__description">
+          <div class="process__card">
+            <div class="process__number">03</div>
+            <div class="process__icon-wrapper">
+              <i class="ri-settings-3-line process__icon"></i>
+            </div>
+            <h3 class="process__title">Maintenance & Support</h3>
+            <p class="process__description">
               Post-launch, we provide continuous monitoring, updates, and enhancements
               to ensure long-term performance and scalability.
             </p>
           </div>
-
         </div>
       </div>
     </section>
@@ -149,28 +189,40 @@
     <!--==================== WHY ACESOFT ====================-->
     <section class="about section">
       <div class="container">
-        <h2 class="section__title">Why Choose Acesoft</h2>
+        <div class="section__header">
+          <span class="section__subtitle">WHY CHOOSE US</span>
+          <h2 class="section__title">Why Choose Acesoft</h2>
+        </div>
 
         <div class="about__grid">
-          <div class="about__item">
-            <h3>Subject Matter Experts</h3>
-            <p>
+          <div class="about__card">
+            <div class="about__icon-wrapper">
+              <i class="ri-user-star-line about__icon"></i>
+            </div>
+            <h3 class="about__title">Subject Matter Experts</h3>
+            <p class="about__description">
               Our team consists of experienced mobile app developers delivering
               enterprise-grade iOS and Android solutions.
             </p>
           </div>
 
-          <div class="about__item">
-            <h3>Cost-Effective Solutions</h3>
-            <p>
+          <div class="about__card">
+            <div class="about__icon-wrapper">
+              <i class="ri-money-dollar-circle-line about__icon"></i>
+            </div>
+            <h3 class="about__title">Cost-Effective Solutions</h3>
+            <p class="about__description">
               We offer high-quality mobile app development services at competitive pricing,
               supporting startups and enterprises alike.
             </p>
           </div>
 
-          <div class="about__item">
-            <h3>24×7 Global Support</h3>
-            <p>
+          <div class="about__card">
+            <div class="about__icon-wrapper">
+              <i class="ri-customer-service-2-line about__icon"></i>
+            </div>
+            <h3 class="about__title">24×7 Global Support</h3>
+            <p class="about__description">
               With teams across North America and Asia Pacific,
               we ensure faster delivery and round-the-clock support.
             </p>
@@ -179,40 +231,47 @@
       </div>
     </section>
 
-    <!--==================== CTA + CONTACT ====================-->
+    <!--==================== CTA ====================-->
     <section class="cta section">
-      <div class="container">
-
-        <!-- Centered CTA Content -->
-        <div class="cta__center">
-          <h2>Have a Mobile App Idea?</h2>
-          <p>
+      <div class="cta__container container">
+        <div class="cta__content">
+          <h2 class="cta__title">Have a Mobile App Idea?</h2>
+          <p class="cta__description">
             Let Acesoft help you turn your idea into a secure, scalable, and
             high-performing mobile application for iOS and Android.
           </p>
+          <a href="contact.html" class="cta__button">Get Started Today</a>
         </div>
 
-        <!-- Centered contact info -->
-        <div class="cta__contact">
-          <p>
-            <i class="ri-map-pin-line"></i>
-            200 Villagewalk Blvd Suite 304, London, ON N6G 0W8
-          </p>
-          <p>
-            <i class="ri-mail-line"></i>
-            <a href="mailto:info@acesoft.ca">info@acesoft.ca</a>
-          </p>
-          <p>
-            <i class="ri-phone-line"></i>
-            <a href="tel:+15198081000">+1 519 808 1000</a>
-          </p>
-        </div>
+        <div class="cta__info">
+          <div class="cta__item">
+            <i class="ri-map-pin-line cta__item-icon"></i>
+            <div class="cta__item-content">
+              <h4 class="cta__item-title">Location</h4>
+              <p class="cta__item-text">200 Villagewalk Blvd Suite 304, London, ON N6G 0W8</p>
+            </div>
+          </div>
 
-        <!-- Centered Button -->
-        <div class="cta__button">
-          <a href="contact.html" class="button">Get Started Today</a>
-        </div>
+          <div class="cta__item">
+            <i class="ri-mail-line cta__item-icon"></i>
+            <div class="cta__item-content">
+              <h4 class="cta__item-title">Email Us</h4>
+              <p class="cta__item-text">
+                <a href="mailto:info@acesoft.ca">info@acesoft.ca</a>
+              </p>
+            </div>
+          </div>
 
+          <div class="cta__item">
+            <i class="ri-phone-line cta__item-icon"></i>
+            <div class="cta__item-content">
+              <h4 class="cta__item-title">Call Us</h4>
+              <p class="cta__item-text">
+                <a href="tel:+15198081000">+1 519 808 1000</a>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -220,8 +279,73 @@
 
   <!--==================== FOOTER ====================-->
   <footer class="footer">
-    <div class="container footer__content">
-      <p>© 2026 Acesoft Technologies. All Rights Reserved.</p>
+    <div class="footer__container container">
+      <div class="footer__content">
+        <div class="footer__column">
+          <a href="index.html" class="footer__logo">
+            <img src="assets/img/logo-2.png" alt="Acesoft Logo" class="footer__logo-img">
+          </a>
+          <p class="footer__description">
+            Trusted mobile app development company delivering innovative solutions worldwide.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link">
+              <i class="ri-facebook-fill"></i>
+            </a>
+            <a href="#" class="footer__social-link">
+              <i class="ri-twitter-fill"></i>
+            </a>
+            <a href="#" class="footer__social-link">
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a href="#" class="footer__social-link">
+              <i class="ri-linkedin-fill"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__title">Services</h4>
+          <ul class="footer__links">
+            <li><a href="ios.html" class="footer__link">iOS Development</a></li>
+            <li><a href="android.html" class="footer__link">Android Development</a></li>
+            <li><a href="#" class="footer__link">Cross-Platform Apps</a></li>
+            <li><a href="#" class="footer__link">UI/UX Design</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__title">Company</h4>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">About Us</a></li>
+            <li><a href="#" class="footer__link">Our Team</a></li>
+            <li><a href="#" class="footer__link">Careers</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__title">Contact Info</h4>
+          <ul class="footer__contact">
+            <li class="footer__contact-item">
+              <i class="ri-map-pin-line"></i>
+              <span>London, ON N6G 0W8</span>
+            </li>
+            <li class="footer__contact-item">
+              <i class="ri-mail-line"></i>
+              <a href="mailto:info@acesoft.ca">info@acesoft.ca</a>
+            </li>
+            <li class="footer__contact-item">
+              <i class="ri-phone-line"></i>
+              <a href="tel:+15198081000">+1 519 808 1000</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Acesoft Technologies. All Rights Reserved.</p>
+      </div>
     </div>
   </footer>
 
